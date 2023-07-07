@@ -11,6 +11,7 @@ using namespace std;
 int main()
 {
 	Engine* MyEngine = new Engine();
+	// GEngine->Run();	// static으로 만들어서 이렇게 선언만 해줘도 바로 생김.
 
 	// Loading a Data files
 	MyEngine->SpawnActor(new APlayer());	// Add player

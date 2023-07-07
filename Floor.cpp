@@ -10,3 +10,7 @@ AFloor::AFloor()
 AFloor::~AFloor()
 {
 }
+
+void AFloor::Tick()
+{
+}

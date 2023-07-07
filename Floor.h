@@ -6,4 +6,5 @@ public:
 	AFloor();
 	virtual ~AFloor();
 
+	virtual void Tick() override;
 };

@@ -2,12 +2,16 @@
 
 AMonster::AMonster()
 {
-	X = 10;
-	Y = 10;
+	X = 1;
+	Y = 1;
 	Shape = 'M';
 }
 
 AMonster::~AMonster()
+{
+}
+
+void AMonster::Tick()
 {
 }
 

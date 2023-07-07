@@ -11,3 +11,7 @@ AWall::~AWall()
 {
 }
 
+void AWall::Tick()
+{
+}
+
