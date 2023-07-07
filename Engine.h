@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>	// Vector 배열 쓰기 위해
 #include "Actor.h"
-#include <List>		// Template 쓰기 위해서.
+
 
 using namespace std;
 
@@ -26,7 +26,7 @@ protected:		// private는 나만 쓰는거니까 상속으로 못 줘서 protected로 해주는것.
 	*/
 
 	vector<AActor*> Actors;	// Vector가 클래스의 타입을 가지고 객체를 만든다. 이를 배열처럼 쓸 수 있고 배열의 갯수를 유동적으로 추가가 가능하다.
-							// Vector로 타입을 AActor의 포인터배열로 만든다.\
+							// Vector로 타입을 AActor의 포인터배열로 만든다.
 
 	bool blsRunning = true;
 };
@@ -102,5 +102,14 @@ int main()
 		IntFloatArray.Data2 // float형
 
 		vector<APlayer> PlayerList;
+	}
+*/
+
+/*
+	int main()
+	{
+		map<APlayer, AActor> IntFloatArray;
+		APlayer My;
+		IntFloatArray[My] = AActor
 	}
 */
