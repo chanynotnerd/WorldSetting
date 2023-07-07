@@ -6,16 +6,17 @@ using namespace std;
 
 int main()
 {
-	Engine MyEngine;
+	Engine* MyEngine = new Engine();
 
 	// Loading a Data files
-	APlayer MyPlayer;
 	AMonster MyMonster;
 	MyMonster.X = 10;
 	MyMonster.Y = 10;
 
-	MyEngine.SpawnActor(MyPlayer);
-	MyEngine.SpawnActor(MyMonster);
+	MyEngine->SpawnActor(new APlayer());
+	MyEngine->SpawnActor(new AMonster());
 
-	MyEngine.Run();
+	MyEngine->Run();
+
+	delete MyEngine;
 }
