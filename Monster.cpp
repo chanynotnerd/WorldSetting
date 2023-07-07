@@ -2,8 +2,8 @@
 
 AMonster::AMonster()
 {
-	X = 1;
-	Y = 1;
+	X = 10;
+	Y = 10;
 	Shape = 'M';
 }
 

@@ -36,9 +36,9 @@ void Engine::Input()
 void Engine::Tick()
 {
 	// ranged for, Available since C++11
-	for (auto Current : Actors)
+	for (auto Current : Actors)	// 액터 배열을 Current에 넣어주어
 	{
-		Current->Tick();
+		Current->Tick();	// 있는 Current를 가지고 Tick을 호출
 	}
 }
 
